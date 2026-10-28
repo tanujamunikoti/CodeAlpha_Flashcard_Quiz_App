@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Flashcard Quiz App</h1>
+        <p>Created by Tanuja</p>
+        <p class="subtitle">Learn new concepts with flashcards!</p>
+
+        <div class="flashcard">
+            <h2 id="question">What is Python?</h2>
+            <p id="answer" class="hidden">
+                Python is a simple and powerful programming language.
+            </p>
+        </div>
+
+        <div class="buttons">
+            <button id="showAnswerBtn">Show Answer</button>
+        </div>
+
+        <div class="navigation">
+            <button id="prevBtn">Previous</button>
+            <span id="counter">1 / 3</span>
+            <button id="nextBtn">Next</button>
+        </div>
+
+        <h2>Manage Flashcards</h2>
+
+        <input type="text" id="questionInput"
+               placeholder="Enter your question">
+
+        <textarea id="answerInput"
+                  placeholder="Enter your answer"></textarea>
+
+        <div class="manage-buttons">
+            <button id="addBtn">Add Card</button>
+            <button id="editBtn">Edit Card</button>
+            <button id="deleteBtn">Delete Card</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
